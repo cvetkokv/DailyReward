@@ -1,0 +1,10 @@
+name: DailyReward
+version: '${project.version}'
+main: org.minecraft.plugin.dailyreward.DailyReward
+api-version: '1.20'
+
+commands:
+  claimreward:
+    description: Claim your daily reward.
+  rewardstatus:
+    description: Check your reward streak status.
