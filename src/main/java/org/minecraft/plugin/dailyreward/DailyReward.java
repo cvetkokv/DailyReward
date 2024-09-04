@@ -34,7 +34,7 @@ public final class DailyReward extends JavaPlugin {
                         .setExecutor(new RewardStatusCommand(databaseCacheManager));
 
         getServer().getPluginManager()
-                .registerEvents(new PlayerListener(databaseConfig, databaseCacheManager), this);
+                .registerEvents(new PlayerListener(this, databaseConfig, databaseCacheManager), this);
 
         new PlayerNotificationTask(this, databaseCacheManager).start();
     }
